@@ -49,3 +49,5 @@ function doSth(f: Function) {
   // let a: any
   let a = f(1, 2, 3);
 }
+
+export {};
