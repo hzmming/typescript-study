@@ -1,11 +1,12 @@
 "use strict";
+exports.__esModule = true;
 var a = ["hello", "world"];
 // ERROR!!!
 // 只读数组，不存在push方法
 a.push("233");
 // ERROR!!!
 // 也不能改值
-a[0] = 'bob';
+a[0] = "bob";
 // ReadonlyArray 同样有缩写
 var b = ["hello", "world"];
 // ERROR!!!
@@ -24,7 +25,7 @@ function doStuff(values) {
     values.push(123);
 }
 // Array可以赋值给ReadonlyArray，而ReadonlyArray却不能赋值给Array。
-// 因为要保证 ReadonlyArray 并被修改
+// 因为要保证 ReadonlyArray 不被修改
 var x = [];
 var y = [];
 // Success

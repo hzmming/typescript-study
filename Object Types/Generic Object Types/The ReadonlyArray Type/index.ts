@@ -5,7 +5,7 @@ a.push("233");
 
 // ERROR!!!
 // 也不能改值
-a[0] = 'bob';
+a[0] = "bob";
 
 // ReadonlyArray 同样有缩写
 let b: readonly string[] = ["hello", "world"];
@@ -20,7 +20,7 @@ new ReadonlyArray("hello", "world");
 // ReadonlyArray的优点，结合函数，让调用者放心地传数组进来，本函数不会修改他的数据
 function doStuff(values: ReadonlyArray<string>) {
   // 可以读
-  const copy = values.slice()
+  const copy = values.slice();
   console.log(`The first value is ${copy[0]}`);
 
   // ERROR!!!
@@ -37,3 +37,4 @@ y = x;
 // ERROR!!!
 x = y;
 
+export {};
