@@ -22,7 +22,19 @@ function f2(a: unknown) {
   // 无法操作unknown属性
   // a.b();
 
-  // 转成any还是可以随心所欲~~
+  // 使用条件判断narrow，还是可以用的
+  if (typeof a === "function") {
+    a();
+  }
+
+  // 也可以强转随心所欲
+  (a as Function)();
+  (a as string).toLowerCase();
+
+  // 强转any
+  (a as any)++;
+  
+  // any接收
   let b: any = a;
   b.random = "hello world";
 }

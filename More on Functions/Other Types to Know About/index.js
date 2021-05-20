@@ -21,7 +21,16 @@ function f2(a) {
     // ERROR!!!
     // 无法操作unknown属性
     // a.b();
-    // 转成any还是可以随心所欲~~
+    // 使用条件判断narrow，还是可以用的
+    if (typeof a === "function") {
+        a();
+    }
+    // 也可以强转随心所欲
+    a();
+    a.toLowerCase();
+    // 强转any
+    a++;
+    // any接收
     var b = a;
     b.random = "hello world";
 }
