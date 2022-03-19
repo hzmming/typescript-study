@@ -13,3 +13,5 @@ function loggingIdentify2<Type extends Lengthwise>(arg: Type): Type {
 loggingIdentify2(3);
 // Success
 loggingIdentify2({ length: 2, value: 3 });
+
+export {};

@@ -9,3 +9,5 @@ getProperty(x, "a");
 // ERROR!!!
 // Argument of type '"c"' is not assignable to parameter of type '"a" | "b"'
 getProperty(x, "c");
+
+export {};

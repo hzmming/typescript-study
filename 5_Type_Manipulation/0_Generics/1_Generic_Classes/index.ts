@@ -28,3 +28,5 @@ stringNumeric.add = function (x, y) {
   return x + y;
 };
 console.log(stringNumeric.add(stringNumeric.zeroValue, "hello"));
+
+export {};
