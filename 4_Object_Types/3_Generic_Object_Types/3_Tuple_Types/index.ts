@@ -60,7 +60,7 @@ function setCoordinate(coord: Either2dOr3d) {
 
 // rest element
 type StringNumberBooleans = [string, number, ...boolean[]];
-type StringBooleansNumber = [string, ...boolean[], number];
+type StringBooleansNumber = [string, ...boolean[], number]; // tsc是能过的，vscode却报错，这是在闹哪样~~
 type BooleansStringNumber = [...boolean[], string, number];
 // ERROR!!!
 // 缺了个number类型
