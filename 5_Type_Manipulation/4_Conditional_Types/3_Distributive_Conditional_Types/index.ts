@@ -1,3 +1,5 @@
+export {};
+
 // 如果给定的类型为 union type，将会distributive（不知道咋翻译，类似数学的乘法分配率）
 type ToArray<Type> = Type extends any ? Type[] : never;
 // type StrArrOrNumArr = string[] | number[]
