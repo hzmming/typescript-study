@@ -60,3 +60,5 @@ type Age4 = PersonType[key]; // Type 'any' cannot be used as an index type.ts(25
 // 正确
 type key = "age";
 type Age5 = PersonType[key];
+
+export {};
