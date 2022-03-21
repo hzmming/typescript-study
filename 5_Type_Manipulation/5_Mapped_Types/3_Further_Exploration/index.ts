@@ -1,3 +1,5 @@
+export {};
+
 // 结合 conditional type
 type ExtractPII<Type> = {
   [Property in keyof Type]: Type[Property] extends { pii: true } ? true : false;
