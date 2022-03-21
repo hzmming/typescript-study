@@ -1,5 +1,5 @@
 type Point = { x: number; y: number };
-// type P = "x" | "y"
+// type P = keyof Point
 type P = keyof Point;
 
 // index signature
