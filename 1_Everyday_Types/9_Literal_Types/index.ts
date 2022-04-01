@@ -1,3 +1,5 @@
+export {};
+
 let a = "hello";
 
 const b = "world";
